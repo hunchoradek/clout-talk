@@ -1,0 +1,351 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+  width: 80%;
+  margin: auto;
+}
+
+img {
+  -webkit-box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.75);
+  box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.75);
+}
+.top {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .top figure img {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    width: 10em;
+  }
+  
+  .top p {
+    align-self: center;
+  }
+  
+  .spacer {
+    flex-basis: 60%;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #484848;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*z-index: 1;*/
+  }
+
+.dropdown-content a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown:hover .dropdown-content {
+    transition-duration: 0.5s;
+    display: block;
+  }
+
+.dropdown-content a:hover {
+  transition-duration: 0.2s;
+  background-color: #222
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #484848;
+    padding: 0.5em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    color: white;
+    justify-content: space-evenly;
+    text-align: center;
+}
+nav ul a {
+    text-decoration: none;
+    color: white; 
+}
+nav ul a:hover{
+    color:whitesmoke;
+    text-decoration: none;
+    border-bottom: 2px solid whitesmoke;
+}
+nav ul li {
+    flex-basis: 20%;
+}
+
+button {
+  padding: 0.3em;
+  border-radius: 1em;
+  border: 1px solid #222;
+  color: #484848;
+  background-color: whitesmoke;
+  font-size: 18px;
+}
+
+button:hover {
+  transition-duration: 0.2s;
+  background-color: #484848;
+  color: whitesmoke;
+}
+
+button:hover span {
+  display:none
+}
+
+button:hover:before {
+  content:"BUY NOW"
+}
+#slide{
+  position: fixed;
+  background: #a9143d;
+  color: whitesmoke;
+  font-weight: bold;
+  width: 200px; 
+  left: -200px;
+  height: 100px;
+  transition: left 0.4s ease-in-out;
+  -o-transition: left 0.4s ease-in-out;
+  -ms-transition: left 0.4s ease-in-out;
+  -moz-transition: left 0.4s ease-in-out;
+  -webkit-transition: left 0.4s ease-in-out;
+}
+#toggle{
+  position: absolute;
+  left: 200px;
+  padding: 10px;
+  background: #e61420; 
+}
+.box {
+  padding: 20px;
+}
+#slide:hover{
+  left: 0px;
+}
+main {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+h1 {
+  flex-basis: 100%;
+  font-weight: bold;
+  font-size: 3em;
+  color: whitesmoke;
+  -webkit-text-stroke: 1px black;
+  text-align: center;
+  justify-self: center;
+  padding: 2.5em;
+  margin-bottom: 1em;
+}
+main figure {
+  flex-basis: 30%;
+  text-align: center;
+  margin-bottom: 2em;
+}
+main figure img {
+  width: 100%;
+}
+main figure p {
+  padding: 0.5em;
+  margin-top: 0.5em;  
+}
+.tags {
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+.grime-tag {
+  border: 1px solid #222;
+  border-radius: 1em;
+  background-color: #a9143d;
+  display: block;
+  color: whitesmoke;
+  font-size: 10px;
+  width: 5em;
+  margin: auto;
+  margin-bottom: 0.5em;
+}
+.sale-tag {
+  border: 1px solid #222;
+  border-radius: 1em;
+  background-color: #e61420;
+  display: block;
+  color: whitesmoke;
+  font-size: 10px;
+  width: 5em;
+  margin: auto;
+  margin-bottom: 0.5em;
+}
+.trap-tag {
+  border: 1px solid #222;
+  border-radius: 1em;
+  background-color: #3a7b0e;
+  display: block;
+  color: whitesmoke;
+  font-size: 10px;
+  width: 5em;
+  margin: auto;
+  margin-bottom: 0.5em;
+}
+.best-tag {
+  border: 1px solid #222;
+  border-radius: 1em;
+  background-color: #cda513;
+  display: block;
+  color: whitesmoke;
+  font-size: 10px;
+  width: 5em;
+  margin: auto;
+  margin-bottom: 0.5em;
+}
+.hype-tag {
+  border: 1px solid #222;
+  border-radius: 1em;
+  background-color: #13acc9;
+  display: block;
+  color: #222;
+  font-size: 10px;
+  width: 5em;
+  margin: auto;
+  margin-bottom: 0.5em;
+}
+.de-tag {
+  border: 1px solid #222;
+  border-radius: 1em;
+  background-color: #c0931b;
+  display: block;
+  color: #222;
+  font-size: 10px;
+  width: 5em;
+  margin: auto;
+  margin-bottom: 0.5em;
+}
+.pl-tag {
+  border: 1px solid #222;
+  border-radius: 1em;
+  background-color: #dedbce;
+  display: block;
+  color: red;
+  font-size: 10px;
+  width: 5em;
+  margin: auto;
+  margin-bottom: 0.5em;
+}
+main figure button {
+  margin-bottom: 0.5em;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  margin-top: 4em;
+}
+
+footer::before {
+  position:absolute;
+  left:0;
+  content: " ";
+  display:block;
+  height:2em;
+  border-top: 2px solid #222;
+  width:100%;
+}
+footer .menufoot {
+  width: 100%;
+  position: relative;
+  padding: 0.5em;
+}
+.menufoot ul {
+  background-color: #fff;
+  display: flex;
+  list-style: none;
+  color: #484848;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.menufoot ul a {
+  text-decoration: none;
+  color: #484848; 
+  font-weight: bold;
+}
+.menufoot ul a:hover{
+  color:#484848;
+  text-decoration: none;
+  border-bottom: 2px solid #484848;
+}
+.menufoot ul li {
+  flex-basis: 20%;
+}
+
+
+footer .text {
+  margin: auto;
+  margin-top: 2em;
+  flex-basis: 80%;
+  text-align: center;
+  margin-top: 1em;
+}
+
+footer .social {
+  text-align: center;
+  margin: auto;
+  margin-top: 2em;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+footer .social a {
+  flex-basis: 15%;
+  width: 50px;
+  margin-bottom: 1em;
+  justify-content: center;
+}
+
+footer .social a img {
+  width: 50px;
+  -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+footer .social a img:hover {
+  transition-duration: 0.2s;
+  transform:scale(1.1); 
+  -webkit-transform:scale(1.1);
+}
+footer .copy {
+  flex-basis: 100%;
+  color:whitesmoke;
+  background-color: #484848;
+  text-align: center;
+  padding: 0.7em;
+  font-weight: bold;
+}
