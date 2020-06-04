@@ -1,0 +1,293 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+  width: 80%;
+  margin: auto;
+}
+
+img {
+  -webkit-box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.75);
+  box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.75);
+}
+.top {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .top figure img {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    width: 10em;
+  }
+  
+  .top p {
+    align-self: center;
+  }
+  
+  .spacer {
+    flex-basis: 60%;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #484848;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*z-index: 1;*/
+  }
+
+.dropdown-content a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown:hover .dropdown-content {
+    transition-duration: 0.5s;
+    display: block;
+  }
+
+.dropdown-content a:hover {
+  transition-duration: 0.2s;
+  background-color: #222
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #484848;
+    padding: 0.5em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    color: white;
+    justify-content: space-evenly;
+    text-align: center;
+}
+nav ul a {
+    text-decoration: none;
+    color: white; 
+}
+nav ul a:hover{
+    color:whitesmoke;
+    text-decoration: none;
+    border-bottom: 2px solid whitesmoke;
+}
+nav ul li {
+    flex-basis: 20%;
+}
+
+button {
+  padding: 0.3em;
+  border-radius: 1em;
+  border: 1px solid #222;
+  color: #484848;
+  background-color: whitesmoke;
+  font-size: 18px;
+}
+
+button:hover {
+  transition-duration: 0.2s;
+  background-color: #484848;
+  color: whitesmoke;
+}
+
+button:hover span {
+  display:none
+}
+
+button:hover:before {
+  content:"WAIT FOR THE SCOTTS"
+}
+.travissale .container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.travissale p {
+  padding-left: 20px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  border-left: 2px solid lightgray;
+}
+.travissale {
+  background: url("../img/salestrav.jpg")
+    no-repeat center/cover;
+  height: 700px;
+  margin-top: 10px;
+}
+
+.travissale .overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.travissale p {
+  color: #fff;
+  border-left: 2px solid #fff;
+}
+
+.travissale h1 {
+  color: #fff;
+  text-align: center;
+}
+article{
+  margin-top: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+article h2 {
+  margin-bottom: 1em;
+}
+article img{
+  flex-basis: 33%;
+  width: 200px;
+}
+.grime {
+  margin-top: 3em;
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grime img{
+  flex-basis: 30%;
+  width: 600px;
+}
+.grime aside {
+  flex-basis: 60%;
+  padding: 1em;
+  text-align: center;
+  align-self: center;
+  font-size: 2em;
+}
+.grime aside h1 {
+  font-weight: bolder;
+  font-size: 3em;
+}
+article p {
+  display: block;
+  flex-basis: 33%;
+  font-weight: bold;
+  font-size: 30px;
+  align-self: center;
+  text-align: center;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  margin-top: 4em;
+}
+
+footer::before {
+  position:absolute;
+  left:0;
+  content: " ";
+  display:block;
+  height:2em;
+  border-top: 2px solid #222;
+  width:100%;
+}
+footer .menufoot {
+  width: 100%;
+  position: relative;
+  padding: 0.5em;
+}
+.menufoot ul {
+  background-color: #fff;
+  display: flex;
+  list-style: none;
+  color: #484848;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.menufoot ul a {
+  text-decoration: none;
+  color: #484848; 
+  font-weight: bold;
+}
+.menufoot ul a:hover{
+  color:#484848;
+  text-decoration: none;
+  border-bottom: 2px solid #484848;
+}
+.menufoot ul li {
+  flex-basis: 20%;
+}
+
+
+footer .text {
+  margin: auto;
+  margin-top: 2em;
+  flex-basis: 80%;
+  text-align: center;
+  margin-top: 1em;
+}
+
+footer .social {
+  text-align: center;
+  margin: auto;
+  margin-top: 2em;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+footer .social a {
+  flex-basis: 15%;
+  width: 50px;
+  margin-bottom: 1em;
+  justify-content: center;
+}
+
+footer .social a img {
+  width: 50px;
+  -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+footer .social a img:hover {
+  transition-duration: 0.2s;
+  transform:scale(1.1); 
+  -webkit-transform:scale(1.1);
+}
+footer .copy {
+  flex-basis: 100%;
+  color:whitesmoke;
+  background-color: #484848;
+  text-align: center;
+  padding: 0.7em;
+  font-weight: bold;
+}
